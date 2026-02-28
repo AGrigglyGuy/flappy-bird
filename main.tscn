@@ -1,5 +1,14 @@
 [gd_scene format=3 uid="uid://bvpnynt0wo3dj"]
 
+[ext_resource type="Texture2D" uid="uid://bq61rd7uutnq" path="res://art/placeholder.png" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dlhoh4fq58t12" path="res://scripts/bird.gd" id="2_h2yge"]
+
 [node name="Node2D" type="Node2D" unique_id=1633333583]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1864573681]
+[node name="Camera" type="Camera2D" parent="." unique_id=1864573681]
+
+[node name="Bird" type="Sprite2D" parent="." unique_id=1211416011]
+position = Vector2(1.9999999, -45.999996)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_0xm2m")
+script = ExtResource("2_h2yge")
